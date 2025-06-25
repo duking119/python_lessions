@@ -11,6 +11,8 @@ def check_keydown_events(event,ai_settings,screen, ship, bullets):
     elif event.key == pygame.K_SPACE:
         # 创建一颗子弹，并将其加入到编组bullets中
         fire_bullet(ai_settings, screen, ship, bullets)
+    elif event.key == pygame.K_q:
+        sys.exit()
             
 def fire_bullet(ai_settings, screen, ship, bullets):
     """如果还没有到达限制，就发射一颗子弹"""
